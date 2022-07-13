@@ -1,0 +1,24 @@
+svn قبله لل جت كان في 
+vc هو (virsion control)
+public--- open source
+private --- team level
+branch: جزء من الريبوزتوري
+master: final changes/main/product/develop
+كرتكل ارفع عالبرودكت قبل اتست لهيك اهميه البرانشز
+merge : last step to merge product with develpment after testing (qa)
+Clone command :[git clone + url] --> بنزل الملف تاع الريبوزتوري  
+عشان يرضى ينسخ لازم اعمل كوبي وانا حاطة الباتش فوق الجت ريبوزوتوري وبرضو بستعمل الماوس مش الكيبورد
+VS: TO MAKE TRACKING FOR CAHNGES 
+BRANCH: GROUB OF COMMITS EACH IS CHANGE 
+اسم الكومت بتدل ع شو بنعمل 
+-- بنغير و بنعمل سيف وبعدها بنعمل 3 اوامر الاول ادد التاني كومت التالت بوش
+ادد دوت يعني كلشي ادد اسم فايل يعني اشي محدد
+extenssion blame : متى مكتوب ومين كتب
+History:  tracking, commits, many folders
+stash: بعمل تغيير بخليه ع حنب  $ git stash apply / ممكن تاسك تاجلت فبخليهاا لبين بالستاش 
+discard change: 
+غيرت وبطلت بدي التغيير
+الاشياء الي مخزنها بتكون بالستيجز
+(git stash/git pull/git stash apply/git add ./commit -m "commit msg" /git push OR git push origin main)
+git lab vs git hub -----> git lab (unlimmited reposotories) support students with .edu email . But git hub (limmited)
+git fetch
