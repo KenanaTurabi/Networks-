@@ -1,4 +1,4 @@
-client server connection 
+Client Server Connection 
 ___________________________________________________________________
 cLIENT 
 -------
