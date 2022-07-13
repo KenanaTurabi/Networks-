@@ -1,0 +1,85 @@
+import java.util.LinkedList;
+import java.util.*;
+
+public class Element {
+    
+    public static void insertion_sort(List<Integer>ll){
+        for(int i=0;i<ll.size();i++){
+        int key = ll.get(i);
+        int j;
+        for(j=i-1;j>=0&&ll.get(j)>key;j--){
+            ll[j+1]=ll[j];
+        }
+        ll[j+1]=key;
+    }
+    }
+    
+    public static void bucketsSort(int[]arr,int size){
+            List<Integer> numeros = new ArrayList<>();
+
+        List<Integer>l_list0 = new LinkedList<>();
+        List<Integer>l_list1 = new LinkedList<>();
+        List<Integer>l_list2 = new LinkedList<>();
+        List<Integer>l_list3 = new LinkedList<>();
+        List<Integer>l_list4 = new LinkedList<>();
+        List<Integer>l_list5 = new LinkedList<>();
+        List<Integer>l_list6 = new LinkedList<>();
+        List<Integer>l_list7 = new LinkedList<>();
+        List<Integer>l_list8 = new LinkedList<>();
+        List<Integer>l_list9 = new LinkedList<>();
+
+
+        for(int i=0;i<size;i++){
+            int tmp=arr[i];
+            while(tmp>9){//while the number more than one digit 
+                tmp=tmp/10;
+             }
+            if(tmp==0)l_list0.add(arr[i]);
+            else if(tmp==1)l_list1.add(arr[i]);
+            else if(tmp==2)l_list2.add(arr[i]);
+            else if(tmp==3)l_list3.add(arr[i]);
+            else if(tmp==4)l_list4.add(arr[i]);
+            else if(tmp==5)l_list5.add(arr[i]);
+            else if(tmp==6)l_list6.add(arr[i]);
+            else if(tmp==7)l_list7.add(arr[i]);
+            else if(tmp==8)l_list8.add(arr[i]);
+            else l_list9.add(arr[i]);
+
+        }
+        insertion_sort(l_list0);
+        insertion_sort(l_list1);
+        insertion_sort(l_list2);
+        insertion_sort(l_list3);
+        insertion_sort(l_list4);
+        insertion_sort(l_list5);
+        insertion_sort(l_list6);
+        insertion_sort(l_list7);
+        insertion_sort(l_list8);
+        insertion_sort(l_list9);
+  
+
+        Integer[] obj={l0,l1,l2,l3,l4,l5,l6,l7,l8,l9};//Array of lists
+        for (int i=0; i<obj.length; i++) {
+         System.out.print(obj[i].toString()+" ");
+        }
+
+        
+
+    }
+
+    public static void printArray(int []arr,int size){
+        for(int i=0;i<size;i++){
+                  System.out.print(arr[i]+" ");
+
+        }
+    }
+    public static  void main(String args[]) {
+      int [] arr = {11,12,22,5,7,33,44,70};
+      System.out.print("before:  ");
+      printArray(arr,arr.length);
+      System.out.println("after:  ");
+
+      bucketsSort(arr,arr.length);
+    
+    }
+}
